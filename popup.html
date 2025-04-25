@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LinkHarvester Pro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>LinkHarvester Pro</h1>
+      <p class="subtitle">Advanced link extraction tool for web professionals</p>
+    </header>
+    
+    <div class="controls">
+      <button id="extractLinks" class="btn-primary">
+        <span class="icon">🔍</span> Extract Links
+      </button>
+      <button id="copyAll" class="btn-success" disabled>
+        <span class="icon">📋</span> Copy All
+      </button>
+      <button id="clearAll" class="btn-danger">
+        <span class="icon">🗑️</span> Clear
+      </button>
+      <button id="retryBtn" class="btn-warning">
+        <span class="icon">🔄</span> Retry
+      </button>
+    </div>
+    
+    <div class="stats">
+      <span id="linksCount">0 links found</span>
+      <div class="filter-controls">
+        <input type="text" id="filterInput" placeholder="Filter links...">
+        <select id="linkTypeFilter">
+          <option value="all">All Types</option>
+          <option value="a">Page Links</option>
+          <option value="img">Images</option>
+          <option value="script">Scripts</option>
+          <option value="link">CSS/Favicons</option>
+          <option value="iframe">Iframes</option>
+          <option value="video">Videos</option>
+          <option value="audio">Audio</option>
+          <option value="source">Media Sources</option>
+          <option value="data-attr">Data Attributes</option>
+          <option value="css">CSS URLs</option>
+          <option value="meta">Meta Tags</option>
+          <option value="javascript">JS URLs</option>
+        </select>
+      </div>
+    </div>
+    
+    <div id="linksContainer" class="links-container"></div>
+    
+    <div id="statusMessage" class="status-message"></div>
+    
+    <footer class="app-footer">
+      <p>Double click to copy | Includes iframes and data-embed-url</p>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "LinkHarvester Pro",
+    "version": "2.2",
+    "description": "Advanced tool for extracting all types of links from webpages including hidden URLs in iframes and data attributes",
+    "icons": {
+      "128": "icons/icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icons/icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "web_accessible_resources": [{
+      "resources": ["content.js"],
+      "matches": ["<all_urls>"]
+    }],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  

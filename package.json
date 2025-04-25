@@ -1,0 +1,36 @@
+{
+  "name": "linkharvester-pro",
+  "version": "2.2.0",
+  "description": "Advanced browser extension for extracting all types of links from webpages",
+  "private": true,
+  "scripts": {
+    "build": "zip -r linkharvester-pro.zip manifest.json *.js *.html *.css LICENSE README.md",
+    "lint": "eslint *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "browser-extension",
+    "link-extractor",
+    "chrome-extension",
+    "firefox-addon",
+    "web-scraping",
+    "developer-tools"
+  ],
+  "author": "Hoxor",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "web-ext": "^7.6.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hox0r/LinkHarvester-Pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hox0r/LinkHarvester-Pro/issues"
+  },
+  "homepage": "https://github.com/hox0r/LinkHarvester-Pro#readme"
+} 
